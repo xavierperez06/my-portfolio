@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { match } from "@formatjs/intl-localematcher";
 import Negotiator from "negotiator";
 import { i18n } from "@/i18n-config";
@@ -9,7 +9,7 @@ let languages = new Negotiator({ headers }).languages();
 
 match(languages, i18n.locales, defaultLocale); // -> 'en-US'
 
-export function proxy(request) {
+export function proxy(request: NextRequest) {
   // Check if there is any supported locale in the pathname
   const { pathname } = request.nextUrl;
   const pathnameHasLocale = i18n.locales.some(

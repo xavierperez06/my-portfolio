@@ -1,5 +1,9 @@
 {
+  "english": "Inglés",
   "menu": {
+    "description": "Accede a las estadísticas del jugador, historial de misiones y árboles de habilidades desbloqueados.",
+    "theme": "Tema",
     "title": "Opciones de menú"
-  }
+  },
+  "spanish": "Español"
 }

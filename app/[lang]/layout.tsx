@@ -4,6 +4,7 @@ import SideMenu from "@/components/ui/common/side-menu";
 import { getDictionary, hasLocale } from "./dictionaries";
 import "./globals.css";
 import { notFound } from "next/dist/client/components/navigation";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,14 +38,23 @@ export default async function RootLayout({
   }
 
   const dictionary = await getDictionary(lang);
+
   return (
     <html
       lang={lang}
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col">
-        <SideMenu dictionary={dictionary} />
-        {children}
+      <body className="min-h-full flex flex-row">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <SideMenu dictionary={dictionary} lang={lang} />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

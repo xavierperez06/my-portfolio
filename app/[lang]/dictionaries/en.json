@@ -1,5 +1,9 @@
 {
+  "english": "English",
   "menu": {
+    "description": "Access player stats, quest history, and unlocked skill trees.",
+    "theme": "Theme",
     "title": "Menu Options"
-  }
+  },
+  "spanish": "Spanish"
 }
