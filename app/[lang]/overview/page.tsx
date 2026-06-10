@@ -63,7 +63,7 @@ const Overview = async ({ params }: { params: Promise<{ lang: string }> }) => {
   ];
 
   return (
-    <Card className="w-full h-screen bg-gray-900 text-white flex flex-col rounded-none border-y-0 border-r-0">
+    <Card className="flex-1 h-screen bg-background text-foreground flex flex-col rounded-none border-y-0 border-r-0">
       <CardHeader>
         <CardTitle>{dictionary.overview.title}</CardTitle>
         <CardDescription>{dictionary.overview.description}</CardDescription>
@@ -78,13 +78,13 @@ const Overview = async ({ params }: { params: Promise<{ lang: string }> }) => {
             <div className="flex flex-col items-start gap-2">
               <Label className="text-lg font-bold">Xavier Perez</Label>
               <Badge>Lv. 37</Badge>
-              <Label className="text-sm text-gray-400">
+              <Label className="text-sm text-muted-foreground">
                 {dictionary.overview.profession}
               </Label>
             </div>
           </div>
 
-          <div className="flex flex-col gap-2 w-lg">
+          <div className="flex flex-col gap-2 w-full max-w-lg">
             {MAIN_SKILLS.map((skill) => (
               <div key={skill.name}>
                 <Label>{skill.name}</Label>
@@ -96,13 +96,13 @@ const Overview = async ({ params }: { params: Promise<{ lang: string }> }) => {
         <div className="grid grid-cols-2 gap-4">
           <div>
             <Label className="text-lg font-bold">{dictionary.about_me}</Label>
-            <p className="text-sm text-gray-400 mt-7 retro">
+            <p className="text-sm text-muted-foreground mt-7 retro">
               <label>{dictionary.overview.about_me}</label>
             </p>
           </div>
 
           <div className="flex flex-col gap-2 font-mono">
-            <Label className="text-xl font-bold text-white mb-2">
+            <Label className="text-xl font-bold text-foreground mb-2">
               {dictionary.stats}
             </Label>
 
@@ -111,19 +111,17 @@ const Overview = async ({ params }: { params: Promise<{ lang: string }> }) => {
                 <Tooltip key={stat.name} delayDuration={300}>
                   <TooltipTrigger>
                     <div className="relative flex items-end gap-2 group cursor-pointer outline-none">
-                      <span className="absolute -left-4 text-emerald-400 opacity-0 group-hover:opacity-100 transition-opacity font-bold">
+                      <span className="absolute -left-4 text-emerald-600 opacity-0 group-hover:opacity-100 transition-opacity font-bold">
                         {">"}
                       </span>
 
-                      {/* Stat Name - Removed cursor-help from the end of this className! */}
-                      <Label className="text-base font-bold text-slate-300 group-hover:text-white transition-colors uppercase tracking-wide pointer-events-none">
+                      <Label className="text-base font-bold text-muted-foreground group-hover:text-foreground transition-colors uppercase tracking-wide pointer-events-none">
                         {stat.name}
                       </Label>
 
-                      {/* Subtle dotted line */}
-                      <div className="flex-1 border-b-2 border-dotted border-slate-600 mb-1.5 opacity-50" />
+                      <div className="flex-1 border-b-2 border-dotted border-muted-foreground mb-1.5 opacity-50" />
 
-                      <label className="text-lg font-bold text-emerald-400">
+                      <label className="text-lg font-bold text-emerald-600 dark:text-emerald-400">
                         {stat.value}
                       </label>
                     </div>

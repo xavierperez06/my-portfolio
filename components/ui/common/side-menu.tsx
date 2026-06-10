@@ -24,10 +24,10 @@ const MENU_ITEMS = [
 
 export default function SideMenu({ dictionary, lang }: SideMenuProps) {
   return (
-    <Card className="w-64 h-screen bg-gray-800 text-white flex flex-col rounded-none border-y-0 border-l-0">
+    <Card className="w-full max-w-80 h-screen bg-background text-foreground flex flex-col rounded-none border-y-0 border-l-0">
       <CardHeader>
         <CardTitle>{dictionary.menu.title}</CardTitle>
-        <CardDescription className="my-2">
+        <CardDescription className="my-2 text-justify">
           {dictionary.menu.description}
         </CardDescription>
       </CardHeader>
@@ -44,7 +44,7 @@ export default function SideMenu({ dictionary, lang }: SideMenuProps) {
           ))}
         </nav>
 
-        <div className="border-t border-gray-700 pt-4">
+        <div className="border-t border-muted-foreground pt-4">
           <LanguageSwitcher lang={lang} dictionary={dictionary} />
           <div className="flex items-center justify-between gap-2 mt-3">
             <span className="text-sm font-medium">{dictionary.menu.theme}</span>
