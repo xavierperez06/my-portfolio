@@ -56,9 +56,7 @@ export default async function RootLayout({
         >
           <TooltipProvider>
             <SideMenu dictionary={dictionary} lang={lang} />
-            <main className="relative flex-1 h-full overflow-x-hidden overflow-y-auto">
-              {children}
-            </main>
+            {children}
           </TooltipProvider>
         </ThemeProvider>
       </body>

@@ -24,34 +24,38 @@ const MENU_ITEMS = [
 
 export default function SideMenu({ dictionary, lang }: SideMenuProps) {
   return (
-    <Card className="flex flex-col bg-background w-full max-w-80 h-screen text-foreground">
-      <CardHeader>
-        <CardTitle>{dictionary.menu.title}</CardTitle>
-        <CardDescription className="my-2 text-justify">
-          {dictionary.menu.description}
-        </CardDescription>
-      </CardHeader>
+    <div className="flex flex-col bg-background w-full max-w-80 h-screen text-foreground shrink-0">
+      <Card className="bg-background h-full">
+        <CardHeader>
+          <CardTitle>{dictionary.menu.title}</CardTitle>
+          <CardDescription className="my-2 text-justify">
+            {dictionary.menu.description}
+          </CardDescription>
+        </CardHeader>
 
-      <CardContent className="flex flex-col flex-1 justify-between">
-        <nav className="flex flex-col gap-8">
-          {MENU_ITEMS.map((item) => (
-            <Button
-              key={item.path}
-              className="justify-start w-full cursor-pointer"
-            >
-              <Link href={`/${lang}${item.path}`}>{item.label}</Link>
-            </Button>
-          ))}
-        </nav>
+        <CardContent className="flex flex-col flex-1 justify-between">
+          <nav className="flex flex-col gap-8">
+            {MENU_ITEMS.map((item) => (
+              <Button
+                key={item.path}
+                className="justify-start w-full cursor-pointer"
+              >
+                <Link href={`/${lang}${item.path}`}>{item.label}</Link>
+              </Button>
+            ))}
+          </nav>
 
-        <div className="pt-4 border-muted-foreground border-t">
-          <LanguageSwitcher lang={lang} dictionary={dictionary} />
-          <div className="flex justify-between items-center gap-2 mt-3">
-            <span className="font-medium text-sm">{dictionary.menu.theme}</span>
-            <RetroModeSwitcher />
+          <div className="pt-4 border-muted-foreground border-t">
+            <LanguageSwitcher lang={lang} dictionary={dictionary} />
+            <div className="flex justify-between items-center gap-2 mt-3">
+              <span className="font-medium text-sm">
+                {dictionary.menu.theme}
+              </span>
+              <RetroModeSwitcher />
+            </div>
           </div>
-        </div>
-      </CardContent>
-    </Card>
+        </CardContent>
+      </Card>
+    </div>
   );
 }
