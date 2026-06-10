@@ -1,9 +1,44 @@
 {
+  "about_me": "About Me",
   "english": "English",
   "menu": {
     "description": "Access player stats, quest history, and unlocked skill trees.",
     "theme": "Theme",
     "title": "Menu Options"
   },
-  "spanish": "Spanish"
+  "overview": {
+    "about_me": "A dedicated and highly responsible Full Stack Developer with a proven track record of mastering complex technologies rapidly. I am committed to delivering high-impact results from day one, consistently aligning technical execution with team goals and the organization’s quality standards.",
+    "description": "Get an overview of the player progress, including key stats, completed quests, and unlocked skills.",
+    "profession": "Full Stack Developer",
+    "stats": {
+      "str": {
+        "name": "STR",
+        "value": 120,
+        "description": "Resilience & Heavy Lifting: This stat reflects pure discipline. It represents both the consistency of a 3-day-a-week progressive overload routine in the gym, and the mental muscle required to tackle heavy code refactoring or drag legacy systems into the modern era."
+      },
+      "dex": {
+        "name": "DEX",
+        "value": 45,
+        "description": "Speed & Adaptability: Grants passive mastery over Agile/Scrum workflows and Test-Driven Development (TDD). Enables swift navigation through fast-paced React and TypeScript ecosystems."
+      },
+      "int": {
+        "name": "INT",
+        "value": 30,
+        "description": "Architecture & Logic: Forged by an Information Systems Engineering degree. Unlocks advanced backend construction and cloud architecture using .NET, Node.js, and AWS (Lambda, S3)."
+      },
+      "char": {
+        "name": "CHAR",
+        "value": 25,
+        "description": "Communication & Teamwork: Unlocks strong professional English capabilities. Applies a passive buff to teamwork, creating an easygoing and highly collaborative dynamic with international clients and cross-functional teams."
+      },
+      "vit": {
+        "name": "VIT",
+        "value": 20,
+        "description": "Uptime & Endurance: Empowers Clean Code practices to guarantee high uptime, maintainability, and bug-resistant releases that withstand heavy server loads and stand the test of time."
+      }
+    },
+    "title": "Player Overview"
+  },
+  "spanish": "Spanish",
+  "stats": "Stats"
 }

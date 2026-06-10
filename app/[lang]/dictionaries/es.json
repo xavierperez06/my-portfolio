@@ -1,9 +1,44 @@
 {
+  "about_me": "Sobre mí",
   "english": "Inglés",
   "menu": {
     "description": "Accede a las estadísticas del jugador, historial de misiones y árboles de habilidades desbloqueados.",
     "theme": "Tema",
     "title": "Opciones de menú"
   },
-  "spanish": "Español"
+  "overview": {
+    "about_me": "Un desarrollador Full Stack dedicado y altamente responsable con un historial comprobado de dominar tecnologías complejas rápidamente. Estoy comprometido a entregar resultados de alto impacto desde el primer día, alineando consistentemente la ejecución técnica con los objetivos del equipo y los estándares de calidad de la organización.",
+    "description": "Obtén una visión general del progreso del jugador, incluyendo estadísticas clave, misiones completadas y habilidades desbloqueadas.",
+    "profession": "Desarrollador Full Stack",
+    "stats": {
+      "str": {
+        "name": "FUE",
+        "value": 120,
+        "description": "Resistencia y levantamiento pesado: Esta estadística refleja pura disciplina. Representa tanto la consistencia de una rutina de sobrecarga progresiva de 3 días a la semana en el gimnasio, como el músculo mental requerido para abordar la refactorización de código pesado o arrastrar sistemas heredados a la era moderna."
+      },
+      "dex": {
+        "name": "DES",
+        "value": 45,
+        "description": "Velocidad y adaptabilidad: Otorga maestría pasiva sobre los flujos de trabajo Agile/Scrum y el Desarrollo Guiado por Pruebas (TDD). Permite una navegación rápida a través de ecosistemas de React y TypeScript de ritmo acelerado."
+      },
+      "int": {
+        "name": "INT",
+        "value": 30,
+        "description": "Arquitectura y lógica: Forjado por una licenciatura en Ingeniería de Sistemas de Información. Desbloquea la construcción avanzada de backend y la arquitectura en la nube utilizando .NET, Node.js y AWS (Lambda, S3)."
+      },
+      "char": {
+        "name": "CAR",
+        "value": 25,
+        "description": "Comunicación y trabajo en equipo: Desbloquea sólidas capacidades profesionales en inglés. Aplica un bono pasivo al trabajo en equipo, creando una dinámica colaborativa y agradable con clientes internacionales y equipos multifuncionales."
+      },
+      "vit": {
+        "name": "VIT",
+        "value": 20,
+        "description": "Tiempo de actividad y resistencia: Potencia las prácticas de código limpio para garantizar un alto tiempo de actividad, mantenibilidad y lanzamientos resistentes a errores que soportan cargas de servidor pesadas y resisten la prueba del tiempo."
+      }
+    },
+    "title": "Visión general del jugador"
+  },
+  "spanish": "Español",
+  "stats": "Estadísticas"
 }

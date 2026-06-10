@@ -5,6 +5,8 @@ import { getDictionary, hasLocale } from "./dictionaries";
 import "./globals.css";
 import { notFound } from "next/dist/client/components/navigation";
 import { ThemeProvider } from "@/components/theme-provider";
+import { TooltipPopup } from "@base-ui/react";
+import { TooltipProvider } from "@/components/ui/8bit/tooltip";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -52,8 +54,10 @@ export default async function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <SideMenu dictionary={dictionary} lang={lang} />
-          {children}
+          <TooltipProvider>
+            <SideMenu dictionary={dictionary} lang={lang} />
+            {children}
+          </TooltipProvider>
         </ThemeProvider>
       </body>
     </html>
