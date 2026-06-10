@@ -24,7 +24,7 @@ const MENU_ITEMS = [
 
 export default function SideMenu({ dictionary, lang }: SideMenuProps) {
   return (
-    <Card className="w-full max-w-80 h-screen bg-background text-foreground flex flex-col rounded-none border-y-0 border-l-0">
+    <Card className="flex flex-col bg-background w-full max-w-80 h-screen text-foreground">
       <CardHeader>
         <CardTitle>{dictionary.menu.title}</CardTitle>
         <CardDescription className="my-2 text-justify">
@@ -32,22 +32,22 @@ export default function SideMenu({ dictionary, lang }: SideMenuProps) {
         </CardDescription>
       </CardHeader>
 
-      <CardContent className="flex flex-1 flex-col justify-between">
+      <CardContent className="flex flex-col flex-1 justify-between">
         <nav className="flex flex-col gap-8">
           {MENU_ITEMS.map((item) => (
             <Button
               key={item.path}
-              className="w-full justify-start cursor-pointer"
+              className="justify-start w-full cursor-pointer"
             >
               <Link href={`/${lang}${item.path}`}>{item.label}</Link>
             </Button>
           ))}
         </nav>
 
-        <div className="border-t border-muted-foreground pt-4">
+        <div className="pt-4 border-muted-foreground border-t">
           <LanguageSwitcher lang={lang} dictionary={dictionary} />
-          <div className="flex items-center justify-between gap-2 mt-3">
-            <span className="text-sm font-medium">{dictionary.menu.theme}</span>
+          <div className="flex justify-between items-center gap-2 mt-3">
+            <span className="font-medium text-sm">{dictionary.menu.theme}</span>
             <RetroModeSwitcher />
           </div>
         </div>

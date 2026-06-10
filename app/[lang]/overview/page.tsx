@@ -63,28 +63,29 @@ const Overview = async ({ params }: { params: Promise<{ lang: string }> }) => {
   ];
 
   return (
-    <Card className="flex-1 h-screen bg-background text-foreground flex flex-col rounded-none border-y-0 border-r-0">
+    <Card className="flex flex-col bg-background min-h-full text-foreground">
       <CardHeader>
         <CardTitle>{dictionary.overview.title}</CardTitle>
         <CardDescription>{dictionary.overview.description}</CardDescription>
       </CardHeader>
       <CardContent className="flex flex-col gap-12">
-        <div className="flex justify-center items-center gap-6 w-full mt-8">
-          <div className="flex items-center gap-8">
+        <div className="flex lg:flex-row flex-col justify-center items-center gap-6 mt-8 w-full">
+          <div className="flex md:flex-row flex-col items-center gap-8">
             <Avatar className="size-60" variant="pixel">
               <AvatarImage src={meImage.src} alt="Avatar image" />
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
-            <div className="flex flex-col items-start gap-2">
-              <Label className="text-lg font-bold">Xavier Perez</Label>
+            <div className="flex flex-col items-center md:items-start gap-2">
+              <Label className="font-bold text-lg">Xavier Perez</Label>
               <Badge>Lv. 37</Badge>
-              <Label className="text-sm text-muted-foreground">
+              <Label className="text-muted-foreground text-sm">
                 {dictionary.overview.profession}
               </Label>
             </div>
           </div>
 
           <div className="flex flex-col gap-2 w-full max-w-lg">
+            <label>{dictionary.main_skills}</label>
             {MAIN_SKILLS.map((skill) => (
               <div key={skill.name}>
                 <Label>{skill.name}</Label>
@@ -93,16 +94,16 @@ const Overview = async ({ params }: { params: Promise<{ lang: string }> }) => {
             ))}
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="gap-4 grid lg:grid-cols-2 grid-rows-1">
           <div>
-            <Label className="text-lg font-bold">{dictionary.about_me}</Label>
-            <p className="text-sm text-muted-foreground mt-7 retro">
+            <Label className="font-bold text-lg">{dictionary.about_me}</Label>
+            <p className="mt-4 lg:mt-7 text-muted-foreground text-sm text-justify retro">
               <label>{dictionary.overview.about_me}</label>
             </p>
           </div>
 
           <div className="flex flex-col gap-2 font-mono">
-            <Label className="text-xl font-bold text-foreground mb-2">
+            <Label className="mb-2 font-bold text-foreground text-xl">
               {dictionary.stats}
             </Label>
 
@@ -110,18 +111,18 @@ const Overview = async ({ params }: { params: Promise<{ lang: string }> }) => {
               {STATS.map((stat) => (
                 <Tooltip key={stat.name} delayDuration={300}>
                   <TooltipTrigger>
-                    <div className="relative flex items-end gap-2 group cursor-pointer outline-none">
-                      <span className="absolute -left-4 text-emerald-600 opacity-0 group-hover:opacity-100 transition-opacity font-bold">
+                    <div className="group relative flex items-end gap-2 outline-none cursor-pointer">
+                      <span className="-left-4 absolute opacity-0 group-hover:opacity-100 font-bold text-emerald-600 transition-opacity">
                         {">"}
                       </span>
 
-                      <Label className="text-base font-bold text-muted-foreground group-hover:text-foreground transition-colors uppercase tracking-wide pointer-events-none">
+                      <Label className="font-bold text-muted-foreground group-hover:text-foreground text-base uppercase tracking-wide transition-colors pointer-events-none">
                         {stat.name}
                       </Label>
 
-                      <div className="flex-1 border-b-2 border-dotted border-muted-foreground mb-1.5 opacity-50" />
+                      <div className="flex-1 opacity-50 mb-1.5 border-muted-foreground border-b-2 border-dotted" />
 
-                      <label className="text-lg font-bold text-emerald-600 dark:text-emerald-400">
+                      <label className="font-bold text-emerald-600 dark:text-emerald-400 text-lg">
                         {stat.value}
                       </label>
                     </div>

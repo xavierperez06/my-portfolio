@@ -47,7 +47,7 @@ export default async function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-row w-full overflow-x-hidden">
+      <body className="flex flex-row w-full h-screen overflow-hidden">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -56,7 +56,9 @@ export default async function RootLayout({
         >
           <TooltipProvider>
             <SideMenu dictionary={dictionary} lang={lang} />
-            {children}
+            <main className="relative flex-1 h-full overflow-x-hidden overflow-y-auto">
+              {children}
+            </main>
           </TooltipProvider>
         </ThemeProvider>
       </body>
