@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import SideMenu from "@/components/ui/common/side-menu";
-import { getDictionary, hasLocale } from "./dictionaries";
+import { hasLocale } from "./dictionaries";
 import "./globals.css";
 import { notFound } from "next/dist/client/components/navigation";
 import { ThemeProvider } from "@/components/theme-provider";
-import { TooltipPopup } from "@base-ui/react";
 import { TooltipProvider } from "@/components/ui/8bit/tooltip";
 
 const geistSans = Geist({
@@ -39,8 +37,6 @@ export default async function RootLayout({
     notFound();
   }
 
-  const dictionary = await getDictionary(lang);
-
   return (
     <html
       lang={lang}
@@ -54,10 +50,7 @@ export default async function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <TooltipProvider>
-            <SideMenu dictionary={dictionary} lang={lang} />
-            {children}
-          </TooltipProvider>
+          <TooltipProvider>{children}</TooltipProvider>
         </ThemeProvider>
       </body>
     </html>

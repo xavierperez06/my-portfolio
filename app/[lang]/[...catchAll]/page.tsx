@@ -1,8 +1,7 @@
 import { headers } from "next/headers";
 import NotFound1 from "@/components/ui/8bit/blocks/not-found1";
 import ogreImage from "@/public/8bit-ogre.webp";
-import { getDictionary } from "./[lang]/dictionaries";
-import "./[lang]/globals.css";
+import { getDictionary } from "../dictionaries";
 
 export default async function NotFoundPage() {
   const headersList = await headers();

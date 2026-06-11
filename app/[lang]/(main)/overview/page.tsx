@@ -17,9 +17,8 @@ import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-  TooltipProvider,
 } from "@/components/ui/8bit/tooltip";
-import { getDictionary } from "../dictionaries";
+import { getDictionary } from "../../dictionaries";
 import meImage from "@/public/me.jpeg";
 
 const MAIN_SKILLS = [
