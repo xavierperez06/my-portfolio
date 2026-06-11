@@ -1,6 +1,6 @@
 {
   "about_me": "Sobre mí",
-  "english": "Inglés",
+  "explore": "Explorar",
   "main_skills": "Habilidades principales",
   "menu": {
     "description": "Accede a las estadísticas del jugador, historial de misiones y árboles de habilidades desbloqueados.",
@@ -9,7 +9,7 @@
   },
   "overview": {
     "about_me": "Un desarrollador Full Stack dedicado y altamente responsable con un historial comprobado de dominar tecnologías complejas rápidamente. Estoy comprometido a entregar resultados de alto impacto desde el primer día, alineando consistentemente la ejecución técnica con los objetivos del equipo y los estándares de calidad de la organización.",
-    "description": "Obtén una visión general del progreso del jugador, incluyendo estadísticas clave, misiones completadas y habilidades desbloqueadas.",
+    "description": "Obtén una visión general del progreso del jugador, incluyendo estadísticas claves, misiones completadas y habilidades desbloqueadas.",
     "profession": "Desarrollador Full Stack",
     "stats": {
       "str": {
@@ -40,6 +40,23 @@
     },
     "title": "Visión general del jugador"
   },
-  "spanish": "Español",
-  "stats": "Estadísticas"
+  "settings": {
+    "items": {
+      "education": "Educación",
+      "experience": "Experiencia",
+      "overview": "Visión general",
+      "skills": "Habilidades"
+    },
+    "name": "Configuración",
+    "theme": {
+      "light": "Modo claro",
+      "dark": "Modo oscuro"
+    },
+    "language": {
+      "english": "Inglés",
+      "spanish": "Español"
+    }
+  },
+  "stats": "Estadísticas",
+  "theme": "Tema"
 }

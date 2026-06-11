@@ -9,23 +9,31 @@ import { Button } from "@/components/ui/8bit/button";
 import { RetroModeSwitcher } from "@/components/ui/retro-mode-switcher";
 import Link from "next/link";
 import LanguageSwitcher from "./language-switcher";
+import { SettingsMenuItems } from "./settings-menu-items";
+import {
+  Menubar,
+  MenubarContent,
+  MenubarItem,
+  MenubarMenu,
+  MenubarTrigger,
+} from "@/components/ui/8bit/menubar";
 
 interface SideMenuProps {
   dictionary: Record<string, any>;
   lang: string;
 }
 
-const MENU_ITEMS = [
-  { label: "Overview", path: "/overview" },
-  { label: "Experience", path: "/experience" },
-  { label: "Education", path: "/education" },
-  { label: "Skills", path: "/skills" },
-];
-
 export default function SideMenu({ dictionary, lang }: SideMenuProps) {
+  const MENU_ITEMS = [
+    { label: dictionary.settings.items.overview, path: "/overview" },
+    { label: dictionary.settings.items.experience, path: "/experience" },
+    { label: dictionary.settings.items.education, path: "/education" },
+    { label: dictionary.settings.items.skills, path: "/skills" },
+  ];
+
   return (
-    <div className="flex flex-col bg-background w-full max-w-80 h-screen text-foreground shrink-0">
-      <Card className="bg-background h-full">
+    <div className="flex flex-col bg-background w-full max-w-80 md:h-screen text-foreground shrink-0">
+      <Card className="hidden md:flex bg-background h-full">
         <CardHeader>
           <CardTitle>{dictionary.menu.title}</CardTitle>
           <CardDescription className="my-2 text-justify">
@@ -56,6 +64,32 @@ export default function SideMenu({ dictionary, lang }: SideMenuProps) {
           </div>
         </CardContent>
       </Card>
+      <div className="w-dvw md:hidden">
+        <Menubar>
+          <MenubarMenu>
+            <MenubarTrigger>{dictionary.explore}</MenubarTrigger>
+            <MenubarContent>
+              {MENU_ITEMS.map((item) => (
+                <MenubarItem key={item.path}>
+                  <Link href={`/${lang}${item.path}`}>{item.label}</Link>
+                </MenubarItem>
+              ))}
+            </MenubarContent>
+          </MenubarMenu>
+          <MenubarMenu>
+            <MenubarTrigger>{dictionary.settings.name}</MenubarTrigger>
+            <MenubarContent>
+              <SettingsMenuItems
+                lightText={dictionary.settings.theme.light}
+                darkText={dictionary.settings.theme.dark}
+                currentLang={lang}
+                englishText={dictionary.settings.language.english}
+                spanishText={dictionary.settings.language.spanish}
+              />
+            </MenubarContent>
+          </MenubarMenu>
+        </Menubar>
+      </div>
     </div>
   );
 }

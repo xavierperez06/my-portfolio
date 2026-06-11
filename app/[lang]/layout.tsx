@@ -47,7 +47,7 @@ export default async function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className="flex flex-row w-full h-screen overflow-hidden">
+      <body className="flex flex-col md:flex-row w-full h-screen overflow-hidden">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

@@ -20,6 +20,7 @@
     ],
     "paths": {
       "@/constants/*": ["./constants/*"],
+      "@/hooks/*": ["./hooks/*"],
       "@/components/*": ["./components/*", "./app/[lang]/components/*"],
       "@/*": ["./*"]
     }

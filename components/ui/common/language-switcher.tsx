@@ -1,6 +1,5 @@
-"use client"; // This is required for interactivity and hooks
+"use client";
 
-import { useRouter, usePathname } from "next/navigation";
 import {
   Select,
   SelectContent,
@@ -8,6 +7,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/8bit/select";
+import useLanguageSwitch from "@/hooks/use-language-swtich";
 
 interface LanguageSwitcherProps {
   lang: string;
@@ -15,18 +15,7 @@ interface LanguageSwitcherProps {
 }
 
 const LanguageSwitcher = ({ lang, dictionary }: LanguageSwitcherProps) => {
-  const router = useRouter();
-  const pathname = usePathname();
-
-  const switchLanguage = (newLang: string) => {
-    if (!newLang || !pathname) return;
-
-    const segments = pathname.split("/");
-    segments[1] = newLang;
-    const newPath = segments.join("/");
-
-    router.push(newPath);
-  };
+  const switchLanguage = useLanguageSwitch(lang);
 
   return (
     <Select
@@ -37,8 +26,12 @@ const LanguageSwitcher = ({ lang, dictionary }: LanguageSwitcherProps) => {
         <SelectValue placeholder="Select Language" />
       </SelectTrigger>
       <SelectContent>
-        <SelectItem value="es">{dictionary.spanish}</SelectItem>
-        <SelectItem value="en">{dictionary.english}</SelectItem>
+        <SelectItem value="es">
+          {dictionary.settings.language.spanish}
+        </SelectItem>
+        <SelectItem value="en">
+          {dictionary.settings.language.english}
+        </SelectItem>
       </SelectContent>
     </Select>
   );

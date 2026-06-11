@@ -1,6 +1,6 @@
 {
   "about_me": "About Me",
-  "english": "English",
+  "explore": "Explore",
   "main_skills": "Main Skills",
   "menu": {
     "description": "Access player stats, quest history, and unlocked skill trees.",
@@ -40,6 +40,23 @@
     },
     "title": "Player Overview"
   },
-  "spanish": "Spanish",
-  "stats": "Stats"
+  "settings": {
+    "items": {
+      "education": "Education",
+      "experience": "Experience",
+      "overview": "Overview",
+      "skills": "Skills"
+    },
+    "name": "Settings",
+    "language": {
+      "english": "English",
+      "spanish": "Spanish"
+    },
+    "theme": {
+      "light": "Light mode",
+      "dark": "Dark mode"
+    }
+  },
+  "stats": "Stats",
+  "theme": "Theme"
 }
