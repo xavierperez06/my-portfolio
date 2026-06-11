@@ -7,6 +7,11 @@
     "theme": "Theme",
     "title": "Menu Options"
   },
+  "not_found": {
+    "description": "An ogre blocks your path! The content you seek has been dragged into the abyss. Retreat to safety or find another quest.",
+    "go_back": "Go Back",
+    "title": "You made the Ogre angry!"
+  },
   "overview": {
     "about_me": "A dedicated and highly responsible Full Stack Developer with a proven track record of mastering complex technologies rapidly. I am committed to delivering high-impact results from day one, consistently aligning technical execution with team goals and the organization’s quality standards.",
     "description": "Get an overview of the player progress, including key stats, completed quests, and unlocked skills.",

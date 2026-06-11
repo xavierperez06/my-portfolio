@@ -7,6 +7,11 @@
     "theme": "Tema",
     "title": "Opciones de menú"
   },
+  "not_found": {
+    "description": "¡Un ogro bloquea tu camino! El contenido que buscas ha sido arrastrado al abismo. Retírate a un lugar seguro o encuentra otra misión.",
+    "go_back": "Regresar",
+    "title": "¡Has enfadado al ogro!"
+  },
   "overview": {
     "about_me": "Un desarrollador Full Stack dedicado y altamente responsable con un historial comprobado de dominar tecnologías complejas rápidamente. Estoy comprometido a entregar resultados de alto impacto desde el primer día, alineando consistentemente la ejecución técnica con los objetivos del equipo y los estándares de calidad de la organización.",
     "description": "Obtén una visión general del progreso del jugador, incluyendo estadísticas claves, misiones completadas y habilidades desbloqueadas.",

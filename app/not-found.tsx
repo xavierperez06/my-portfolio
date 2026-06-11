@@ -1,18 +1,23 @@
 import { headers } from "next/headers";
-import Link from "next/link";
 import NotFound1 from "@/components/ui/8bit/blocks/not-found1";
 import ogreImage from "@/public/8bit-ogre.webp";
+import { getDictionary } from "./[lang]/dictionaries";
+import "./[lang]/globals.css";
 
 export default async function NotFoundPage() {
-  // Await the headers (Next 15+ requires headers() to be awaited, Next 14 does not, adjust as needed)
   const headersList = await headers();
   const lang = headersList.get("x-next-locale") || "en";
-
-  const title = lang === "es" ? "Página no encontrada" : "Page Not Found";
+  const dictionary = await getDictionary(lang as "en" | "es");
 
   return (
-    <div className="flex min-h-screen items-center justify-center p-4">
-      <NotFound1 imageSrc={ogreImage.src} />
+    <div className="flex flex-1 items-center justify-center overflow-auto">
+      <NotFound1
+        title={dictionary.not_found.title}
+        description={dictionary.not_found.description}
+        cta={dictionary.not_found.go_back}
+        href="/"
+        imageSrc={ogreImage.src}
+      />
     </div>
   );
 }
