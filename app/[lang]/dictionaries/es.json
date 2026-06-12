@@ -45,6 +45,16 @@
     },
     "title": "Visión general del jugador"
   },
+  "portal": {
+    "badge": "Viaje rápido",
+    "description": "La puerta está abierta. Un paso y estás en el siguiente reino.",
+    "note": "No se requiere tiempo de enfriamiento.",
+    "opening": "Abriendo portal...",
+    "primary_button": "Entrar al portal",
+    "secondary_button": "Aprender más",
+    "title": "Haz clic para atravesar el portal",
+    "traveling": "Viajando..."
+  },
   "settings": {
     "items": {
       "education": "Educación",

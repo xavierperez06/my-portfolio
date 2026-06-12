@@ -45,6 +45,16 @@
     },
     "title": "Player Overview"
   },
+  "portal": {
+    "badge": "Fast Travel",
+    "description": "The gateway is open. One step and you're in the next realm.",
+    "note": "No cooldown required.",
+    "opening": "Opening gateway...",
+    "primary_button": "Enter Portal",
+    "secondary_button": "Learn More",
+    "title": "Click to go through the portal",
+    "traveling": "Traveling..."
+  },
   "settings": {
     "items": {
       "education": "Education",
