@@ -1,11 +1,41 @@
 {
   "about_me": "About Me",
+  "experience": {
+    "description": "Access the player's Quest Log: review past campaigns, guild ranks held, and legendary achievements unlocked across multiple realms",
+    "kubikware": {
+      "description": "Collaborated within a 7-person cross-functional team to enhance a high-scale toll management platform. I developed scalable Web and API solutions for real-time fleet monitoring and automated payments. Utilizing Test-Driven Development and modern architectural patterns, I optimized system performance, refactored legacy code, and reduced bugs, while actively contributing to quarterly strategic roadmap planning.",
+      "tooltip": "Tech Stack: React, Typescript, .NET, SQL Server, TDD, REST APIs, Azure."
+    },
+    "nextira": {
+      "description": "Architected and deployed scalable AWS cloud infrastructures using Terraform and Packer to transition creative studios from on-premise environments. I managed end-to-end migrations of rendering pipelines using Thinkbox Deadline and automated resource provisioning. Additionally, I developed Python automation scripts and React frontend components to enhance platform management, ensuring high availability and smooth client onboarding.",
+      "tooltip": "Tech Stack: AWS (EC2, S3, Lambda, VPC), Terraform, Packer, Python, React, Linux, AWS Thinkbox Deadline."
+    },
+    "perficient": {
+      "description": "Architected and maintained a TypeScript-based Load Management SPA and a freight shipper portal for a Kansas City client. I developed production-ready frontend features utilizing the modern React ecosystem, Redux Toolkit, and Material UI, while leveraging C# / Node.js to implement robust service APIs and business logic that ensured system correctness, maintainability, and seamless workflow support.",
+      "tooltip": "Tech Stack: AWS, .NET 10, React, React Native, TypeScript, PostgreSQL, Node.js."
+    },
+    "title": "Experience Timeline"
+  },
   "explore": "Explore",
   "main_skills": "Main Skills",
   "menu": {
     "description": "Access player stats, quest history, and unlocked skill trees.",
     "theme": "Theme",
     "title": "Menu Options"
+  },
+  "months": {
+    "jan": "Jan",
+    "feb": "Feb",
+    "mar": "Mar",
+    "apr": "Apr",
+    "may": "May",
+    "jun": "Jun",
+    "jul": "Jul",
+    "aug": "Aug",
+    "sep": "Sep",
+    "oct": "Oct",
+    "nov": "Nov",
+    "dec": "Dec"
   },
   "not_found": {
     "description": "An ogre blocks your path! The content you seek has been dragged into the abyss. Retreat to safety or find another quest.",

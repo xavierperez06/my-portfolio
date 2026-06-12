@@ -19,7 +19,7 @@ const Home = async ({ params }: { params: Promise<{ lang: string }> }) => {
         travelingText={dictionary.portal.traveling}
         note={dictionary.portal.note}
         openingText={dictionary.portal.opening}
-        href="/overview"
+        href={`/${lang}/overview`}
         hrefSecondary="/docs/blocks"
         imageSrc={portalImage.src}
       />

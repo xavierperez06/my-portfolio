@@ -1,11 +1,41 @@
 {
   "about_me": "Sobre mí",
+  "experience": {
+    "description": "Accede al Registro de Misiones del jugador: revisa campañas pasadas, rangos de gremio ocupados y logros legendarios desbloqueados en múltiples reinos",
+    "kubikware": {
+      "description": "Colaboré dentro de un equipo multifuncional de 7 personas para mejorar una plataforma de gestión de peajes a gran escala. Desarrollé soluciones Web y API escalables para monitoreo de flotas en tiempo real y pagos automatizados. Utilizando Desarrollo Guiado por Pruebas y patrones arquitectónicos modernos, optimicé el rendimiento del sistema, refactoricé código heredado y reduje errores, mientras contribuía activamente a la planificación de la hoja de ruta estratégica trimestral.",
+      "tooltip": "Stack tecnológico: React, Typescript, .NET, SQL Server, TDD, REST APIs, Azure."
+    },
+    "nextira": {
+      "description": "Arquitecté y desplegué infraestructuras en la nube de AWS escalables utilizando Terraform y Packer para trasladar estudios creativos desde entornos locales. Gestioné migraciones de extremo a extremo de pipelines de renderizado utilizando Thinkbox Deadline y automatización de aprovisionamiento de recursos. Además, desarrollé scripts de automatización en Python y componentes frontend en React para mejorar la gestión de la plataforma, asegurando alta disponibilidad y una incorporación fluida de clientes.",
+      "tooltip": "Stack tecnológico: AWS (EC2, S3, Lambda, VPC), Terraform, Packer, Python, React, Linux, AWS Thinkbox Deadline."
+    },
+    "perficient": {
+      "description": "Arquitecté y mantuve una SPA de Gestión de Carga basada en TypeScript y un portal de transportistas para un cliente en Kansas City. Desarrollé funciones de frontend listas para producción utilizando el ecosistema moderno de React, Redux Toolkit y Material UI, mientras aprovechaba C# / Node.js para implementar APIs de servicio robustas y lógica empresarial que garantizaban la corrección del sistema, la mantenibilidad y el soporte de flujo de trabajo sin problemas.",
+      "tooltip": "Stack tecnológico: AWS, .NET 10, React, React Native, TypeScript, PostgreSQL, Node.js."
+    },
+    "title": "Línea de tiempo de experiencia"
+  },
   "explore": "Explorar",
   "main_skills": "Habilidades principales",
   "menu": {
     "description": "Accede a las estadísticas del jugador, historial de misiones y árboles de habilidades desbloqueados.",
     "theme": "Tema",
     "title": "Opciones de menú"
+  },
+  "months": {
+    "jan": "Ene",
+    "feb": "Feb",
+    "mar": "Mar",
+    "apr": "Abr",
+    "may": "May",
+    "jun": "Jun",
+    "jul": "Jul",
+    "aug": "Ago",
+    "sep": "Sep",
+    "oct": "Oct",
+    "nov": "Nov",
+    "dec": "Dic"
   },
   "not_found": {
     "description": "¡Un ogro bloquea tu camino! El contenido que buscas ha sido arrastrado al abismo. Retírate a un lugar seguro o encuentra otra misión.",
