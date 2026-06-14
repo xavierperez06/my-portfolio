@@ -24,6 +24,7 @@ export interface TimelineEvent {
   icon: ReactNode;
   title: string;
   tooltip?: string;
+  role?: string;
 }
 
 interface Timeline3Props {
@@ -86,7 +87,7 @@ function EventCard({
   align?: "left" | "right";
 }) {
   return (
-    <Tooltip key={event.title} delayDuration={300}>
+    <Tooltip key={event.title + event.role} delayDuration={300}>
       <TooltipTrigger>
         <Card>
           <CardHeader className="pb-2">
@@ -111,6 +112,11 @@ function EventCard({
                 <Badge className="text-[9px]">{event.badge}</Badge>
               )}
             </div>
+            {event.role && (
+              <div className="text-[9px] text-muted-foreground">
+                {event.role}
+              </div>
+            )}
           </CardHeader>
           <CardContent>
             <p
@@ -160,7 +166,10 @@ export default function Timeline3({
           <div className="relative">
             <div className="absolute top-0 bottom-0 left-6 w-0 border-l-2 border-dashed border-border" />
             {events.map((event) => (
-              <div className="relative flex gap-4 pb-6" key={event.title}>
+              <div
+                className="relative flex gap-4 pb-6"
+                key={event.title + event.role}
+              >
                 <div className="retro relative z-10 flex size-12 shrink-0 items-center justify-center border-2 border-primary bg-background font-bold text-sm">
                   {event.icon}
                 </div>
@@ -181,7 +190,10 @@ export default function Timeline3({
               const isLeft = idx % 2 === 0;
 
               return (
-                <div className="relative flex items-center" key={event.title}>
+                <div
+                  className="relative flex items-center"
+                  key={event.title + event.role}
+                >
                   {/* Left side */}
                   <div className="flex-1 pr-8">
                     {isLeft && (

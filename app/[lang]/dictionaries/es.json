@@ -1,18 +1,50 @@
 {
   "about_me": "Sobre mí",
   "experience": {
+    "agrofy": {
+      "description": "Como Desarrollador Full Stack, desarrollé funciones de identidad centrales, incluyendo flujos de autenticación y registro seguros en los productos de Agrofy. Implementé módulos de seguridad y gestión de usuarios utilizando .NET Core y React.js para garantizar la integridad de los datos. Además, co-arquitecté servicios escalables nativos en la nube de AWS y proporcioné mejoras técnicas continuas para mantener una alta disponibilidad del servicio.",
+      "role": "Desarrollador Full Stack Senior",
+      "tooltip": "Stack tecnológico: .NET Core, SQL Server 2019, React.js, Node.js, AWS, Git.",
+      "lead": {
+        "description": "Como Líder Técnico, arquitecté una robusta API de Integración para conectar clientes de terceros al ecosistema de Agrofy e ingenié un sistema de importación masiva de productos de alto volumen, mejorando significativamente la eficiencia del procesamiento de datos. Además, colaboré con los equipos de producto para mejorar la plataforma del mercado desplegada en AWS utilizando .NET Core y React.",
+        "role": "Líder Técnico",
+        "tooltip": "Stack tecnológico: .NET Core, SQL Server 2019, React.js, AWS, Git."
+      }
+    },
     "description": "Accede al Registro de Misiones del jugador: revisa campañas pasadas, rangos de gremio ocupados y logros legendarios desbloqueados en múltiples reinos",
+    "elipsys-it": {
+      "description": "Como Desarrollador Junior, asistí en la construcción de soluciones de software personalizadas en diversas industrias participando en el ciclo de desarrollo. Ayudé a recopilar requisitos de usuario y desarrollé aplicaciones web utilizando MVC 5 Razor y Visual WebGui. Además, contribuí a actualizar sistemas heredados y escribí documentación técnica para apoyar entregas de proyectos sin problemas y mantenibilidad a largo plazo.",
+      "role": "Desarrollador Junior",
+      "tooltip": "Stack tecnológico: VB.NET, .NET Framework 4.0, MVC 5 Razor, Entity Framework, SQL Server, DotNetNuke, Visual WebGui."
+    },
     "kubikware": {
       "description": "Colaboré dentro de un equipo multifuncional de 7 personas para mejorar una plataforma de gestión de peajes a gran escala. Desarrollé soluciones Web y API escalables para monitoreo de flotas en tiempo real y pagos automatizados. Utilizando Desarrollo Guiado por Pruebas y patrones arquitectónicos modernos, optimicé el rendimiento del sistema, refactoricé código heredado y reduje errores, mientras contribuía activamente a la planificación de la hoja de ruta estratégica trimestral.",
+      "role": "Desarrollador Full Stack Senior",
       "tooltip": "Stack tecnológico: React, Typescript, .NET, SQL Server, TDD, REST APIs, Azure."
     },
     "nextira": {
       "description": "Arquitecté y desplegué infraestructuras en la nube de AWS escalables utilizando Terraform y Packer para trasladar estudios creativos desde entornos locales. Gestioné migraciones de extremo a extremo de pipelines de renderizado utilizando Thinkbox Deadline y automatización de aprovisionamiento de recursos. Además, desarrollé scripts de automatización en Python y componentes frontend en React para mejorar la gestión de la plataforma, asegurando alta disponibilidad y una incorporación fluida de clientes.",
+      "role": "Desarrollador de Software Senior",
       "tooltip": "Stack tecnológico: AWS (EC2, S3, Lambda, VPC), Terraform, Packer, Python, React, Linux, AWS Thinkbox Deadline."
     },
     "perficient": {
       "description": "Arquitecté y mantuve una SPA de Gestión de Carga basada en TypeScript y un portal de transportistas para un cliente en Kansas City. Desarrollé funciones de frontend listas para producción utilizando el ecosistema moderno de React, Redux Toolkit y Material UI, mientras aprovechaba C# / Node.js para implementar APIs de servicio robustas y lógica empresarial que garantizaban la corrección del sistema, la mantenibilidad y el soporte de flujo de trabajo sin problemas.",
+      "role": "Desarrollador Full Stack Senior",
       "tooltip": "Stack tecnológico: AWS, .NET 10, React, React Native, TypeScript, PostgreSQL, Node.js."
+    },
+    "praxys": {
+      "description": "Como Desarrollador Semi-Senior, contribuí al desarrollo y mantenimiento de una aplicación de escritorio esencial para las operaciones farmacéuticas y la gestión de inventario. Usando C# y VB.NET, construí lógica empresarial confiable e interfaces de usuario para apoyar las transacciones diarias. Además, ayudé a agilizar los flujos de trabajo internos actualizando funciones y solucionando problemas complejos en sistemas heredados.",
+      "role": "Desarrollador Full Stack Semi-Senior",
+      "tooltip": "Stack tecnológico: VB.NET, .NET Framework 4.5, SQL Server, TFS."
+    },
+    "qmas": {
+      "description": "Contribuí a la construcción de soluciones de seguros empresariales configurando sistemas centrales e implementando reglas comerciales utilizando Gosu en la plataforma Guidewire. Trabajando estrechamente dentro de un equipo Agile utilizando CA Agile Central, ayudé a entregar nuevas funciones de manera consistente mientras aseguraba una fuerte alineación con los objetivos del sprint del proyecto.",
+      "role": "Desarrollador Guidewire",
+      "tooltip": "Stack tecnológico: Gosu, Guidewire, Agile, CA Agile Central."
+    },
+    "timeline": {
+      "title": "Progresión del personaje",
+      "description": "Seguimiento de la XP ganada, habilidades dominadas y la próxima historia principal."
     },
     "title": "Línea de tiempo de experiencia"
   },

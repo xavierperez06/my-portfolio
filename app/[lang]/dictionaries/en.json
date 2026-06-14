@@ -1,18 +1,50 @@
 {
   "about_me": "About Me",
   "experience": {
+    "agrofy": {
+      "description": "As a Full Stack Developer, I developed core identity features, including secure authentication and registration workflows across Agrofy products. I implemented security and user management modules utilizing .NET Core and React.js to ensure data integrity. Additionally, I co-architected scalable cloud-native AWS services and provided continuous technical enhancements to maintain high service availability.",
+      "role": "Sr. Full stack Developer",
+      "tooltip": "Tech Stack: .NET Core, SQL Server 2019, React.js, Node.js, AWS, Git.",
+      "lead": {
+        "description": "As a Technical Lead, I architected a robust Integration API to connect third-party clients to the Agrofy ecosystem and engineered a high-volume bulk product importation system, significantly improving data processing efficiency. Additionally, I collaborated with product teams to enhance the AWS-deployed marketplace platform utilizing .NET Core and React.",
+        "role": "Technical Lead",
+        "tooltip": "Tech Stack: .NET Core, SQL Server 2019, React.js, AWS, Git."
+      }
+    },
     "description": "Access the player's Quest Log: review past campaigns, guild ranks held, and legendary achievements unlocked across multiple realms",
+    "elipsys-it": {
+      "description": "As a Junior Developer, I assisted in building custom software solutions across various industries by participating in the development lifecycle. I helped gather user requirements and developed web applications using MVC 5 Razor and Visual WebGui. Additionally, I contributed to updating legacy systems and wrote technical documentation to support smooth project handovers and long-term maintainability.",
+      "role": "Junior Developer",
+      "tooltip": "Tech Stack: VB.NET, .NET Framework 4.0, MVC 5 Razor, Entity Framework, SQL Server, DotNetNuke, Visual WebGui."
+    },
     "kubikware": {
       "description": "Collaborated within a 7-person cross-functional team to enhance a high-scale toll management platform. I developed scalable Web and API solutions for real-time fleet monitoring and automated payments. Utilizing Test-Driven Development and modern architectural patterns, I optimized system performance, refactored legacy code, and reduced bugs, while actively contributing to quarterly strategic roadmap planning.",
+      "role": "Sr. Full stack Developer",
       "tooltip": "Tech Stack: React, Typescript, .NET, SQL Server, TDD, REST APIs, Azure."
     },
     "nextira": {
       "description": "Architected and deployed scalable AWS cloud infrastructures using Terraform and Packer to transition creative studios from on-premise environments. I managed end-to-end migrations of rendering pipelines using Thinkbox Deadline and automated resource provisioning. Additionally, I developed Python automation scripts and React frontend components to enhance platform management, ensuring high availability and smooth client onboarding.",
+      "role": "Sr. Software Engineer",
       "tooltip": "Tech Stack: AWS (EC2, S3, Lambda, VPC), Terraform, Packer, Python, React, Linux, AWS Thinkbox Deadline."
     },
     "perficient": {
       "description": "Architected and maintained a TypeScript-based Load Management SPA and a freight shipper portal for a Kansas City client. I developed production-ready frontend features utilizing the modern React ecosystem, Redux Toolkit, and Material UI, while leveraging C# / Node.js to implement robust service APIs and business logic that ensured system correctness, maintainability, and seamless workflow support.",
+      "role": "Sr. Full stack Developer",
       "tooltip": "Tech Stack: AWS, .NET 10, React, React Native, TypeScript, PostgreSQL, Node.js."
+    },
+    "praxys": {
+      "description": "As a Semi-Senior Developer, I contributed to developing and maintaining essential desktop application for pharmaceutical operations and inventory management. Using C# and VB.NET, I built reliable business logic and user interfaces to support daily transactions. Additionally, I helped streamline internal workflows by updating features and troubleshooting complex legacy systems.",
+      "role": "Semi-Senior Full Stack Developer",
+      "tooltip": "Tech Stack: VB.NET, .NET Framework 4.5, SQL Server, TFS."
+    },
+    "qmas": {
+      "description": "I contributed to building enterprise insurance solutions by configuring core systems and implementing business rules using Gosu on the Guidewire platform. Working closely within an Agile team utilizing CA Agile Central, I helped deliver new features consistently while ensuring strong alignment with project sprint goals.",
+      "role": "Guidewire Developer",
+      "tooltip": "Tech Stack: Gosu, Guidewire, Agile, CA Agile Central."
+    },
+    "timeline": {
+      "title": "Character Progression",
+      "description": "Tracking the XP earned, skills mastered, and the next main storyline."
     },
     "title": "Experience Timeline"
   },

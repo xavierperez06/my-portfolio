@@ -7,6 +7,10 @@ import { getDictionary } from "../../dictionaries";
 import perficientImage from "@/public/8bit-perficient.png";
 import kubikwareImage from "@/public/8bit-kubikware.png";
 import nextiraImage from "@/public/8bit-nextira.png";
+import agrofyImage from "@/public/8bit-agrofy.png";
+import praxysImage from "@/public/8bit-praxys.png";
+import qmasImage from "@/public/8bit-qmas.jpg";
+import elipsysImage from "@/public/8bit-elipsysit.png";
 
 const ExperiencePage = async ({
   params,
@@ -24,6 +28,7 @@ const ExperiencePage = async ({
       description: dictionary.experience.perficient.description,
       tooltip: dictionary.experience.perficient.tooltip,
       badge: `${dictionary.months.oct} 2024 - NOW`,
+      role: dictionary.experience.perficient.role,
     },
     {
       icon: <NextImage src={kubikwareImage} alt="Kubikware" />,
@@ -31,6 +36,7 @@ const ExperiencePage = async ({
       description: dictionary.experience.kubikware.description,
       tooltip: dictionary.experience.kubikware.tooltip,
       badge: `${dictionary.months.aug} 2023-${dictionary.months.oct} 2024`,
+      role: dictionary.experience.kubikware.role,
     },
     {
       icon: <NextImage src={nextiraImage} alt="Nextira" />,
@@ -38,18 +44,47 @@ const ExperiencePage = async ({
       description: dictionary.experience.nextira.description,
       tooltip: dictionary.experience.nextira.tooltip,
       badge: `${dictionary.months.dec} 2021 - ${dictionary.months.jun} 2023`,
+      role: dictionary.experience.nextira.role,
     },
     {
-      icon: "Q4",
-      title: "Animation Pack",
-      description:
-        "Pixel transitions, sprite animations, and retro loading screens.",
+      icon: <NextImage src={agrofyImage} alt="Agrofy - Lead" />,
+      title: "Agrofy",
+      description: dictionary.experience.agrofy.lead.description,
+      tooltip: dictionary.experience.agrofy.lead.tooltip,
+      badge: `${dictionary.months.aug} 2020 - ${dictionary.months.nov} 2021`,
+      role: dictionary.experience.agrofy.lead.role,
     },
     {
-      icon: "Q5",
-      title: "Game UI Kit",
-      description:
-        "Inventory systems, dialogue boxes, battle UIs. Full game interface toolkit.",
+      icon: <NextImage src={agrofyImage} alt="Agrofy" />,
+      title: "Agrofy",
+      description: dictionary.experience.agrofy.description,
+      tooltip: dictionary.experience.agrofy.tooltip,
+      badge: `${dictionary.months.may} 2019 - ${dictionary.months.aug} 2020`,
+      role: dictionary.experience.agrofy.role,
+    },
+    {
+      icon: <NextImage src={praxysImage} alt="Praxys" />,
+      title: "Praxys",
+      description: dictionary.experience.praxys.description,
+      tooltip: dictionary.experience.praxys.tooltip,
+      badge: `${dictionary.months.nov} 2018 - ${dictionary.months.apr} 2019`,
+      role: dictionary.experience.praxys.role,
+    },
+    {
+      icon: <NextImage src={qmasImage} alt="Qmas" />,
+      title: "Qmas",
+      description: dictionary.experience.qmas.description,
+      tooltip: dictionary.experience.qmas.tooltip,
+      badge: `${dictionary.months.jun} 2018 - ${dictionary.months.nov} 2018`,
+      role: dictionary.experience.qmas.role,
+    },
+    {
+      icon: <NextImage src={elipsysImage} alt="Elipsys IT" />,
+      title: "Elipsys IT",
+      description: dictionary.experience["elipsys-it"].description,
+      tooltip: dictionary.experience["elipsys-it"].tooltip,
+      badge: `${dictionary.months.apr} 2014-${dictionary.months.jun} 2018`,
+      role: dictionary.experience["elipsys-it"].role,
     },
   ];
 
@@ -58,7 +93,11 @@ const ExperiencePage = async ({
       title={dictionary.experience.title}
       description={dictionary.experience.description}
     >
-      <Timeline3 events={events} />
+      <Timeline3
+        events={events}
+        title={dictionary.experience.timeline.title}
+        description={dictionary.experience.timeline.description}
+      />
     </PageCard>
   );
 };
