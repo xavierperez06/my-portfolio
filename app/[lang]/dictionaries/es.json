@@ -109,6 +109,7 @@
   },
   "portal": {
     "badge": "Viaje rápido",
+    "cheat_code": "Ingresa el código de trucos: ",
     "description": "La puerta está abierta. Un paso y estás en el siguiente reino.",
     "note": "No se requiere tiempo de enfriamiento.",
     "opening": "Abriendo portal...",

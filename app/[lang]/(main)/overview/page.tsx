@@ -1,8 +1,3 @@
-import {
-  Avatar,
-  AvatarImage,
-  AvatarFallback,
-} from "@/components/ui/8bit/avatar";
 import { Progress } from "@/components/ui/8bit/progress";
 import { Label } from "@/components/ui/8bit/label";
 import { Badge } from "@/components/ui/8bit/badge";
@@ -12,8 +7,8 @@ import {
   TooltipTrigger,
 } from "@/components/ui/8bit/tooltip";
 import { getDictionary } from "../../dictionaries";
-import meImage from "@/public/me.jpeg";
 import PageCard from "@/components/ui/common/page-card";
+import { ThemeAvatar } from "@/components/ui/common/theme-avatar";
 
 const MAIN_SKILLS = [
   { name: ".NET", level: 100 },
@@ -80,10 +75,7 @@ const Overview = async ({ params }: { params: Promise<{ lang: string }> }) => {
     >
       <div className="flex lg:flex-row flex-col justify-center items-center gap-6 mt-8 w-full">
         <div className="flex md:flex-row flex-col items-center gap-8">
-          <Avatar className="size-60" variant="pixel">
-            <AvatarImage src={meImage.src} alt="Avatar image" />
-            <AvatarFallback>CN</AvatarFallback>
-          </Avatar>
+          <ThemeAvatar />
           <div className="flex flex-col items-center md:items-start gap-2">
             <Label className="font-bold text-lg">Xavier Perez</Label>
             <Badge>Lv. {getAge()}</Badge>

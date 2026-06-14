@@ -109,6 +109,7 @@
   },
   "portal": {
     "badge": "Fast Travel",
+    "cheat_code": "Enter cheat code: ",
     "description": "The gateway is open. One step and you're in the next realm.",
     "note": "No cooldown required.",
     "opening": "Opening gateway...",

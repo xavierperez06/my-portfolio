@@ -119,7 +119,7 @@ export default function PortalTransition({
               handleEnter(href);
             }}
           >
-            <Button disabled={traveling}>
+            <Button disabled={traveling} className="cursor-pointer">
               {traveling ? travelingText : primaryLabel}
             </Button>
           </Link>
@@ -137,7 +137,11 @@ export default function PortalTransition({
               handleEnter(hrefSecondary);
             }}
           >
-            <Button variant="outline" disabled={traveling}>
+            <Button
+              variant="outline"
+              disabled={traveling}
+              className="cursor-pointer"
+            >
               {traveling ? travelingText : secondaryLabel}
             </Button>
           </Link>

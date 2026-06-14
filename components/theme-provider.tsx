@@ -22,7 +22,7 @@ export function ThemeProvider({
   ...props
 }: React.ComponentProps<typeof NextThemesProvider>) {
   return (
-    <NextThemesProvider {...props}>
+    <NextThemesProvider {...props} themes={["light", "dark", "doom"]}>
       <ThemeHotkey />
       {children}
     </NextThemesProvider>
