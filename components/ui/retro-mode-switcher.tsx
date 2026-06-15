@@ -1,9 +1,7 @@
 "use client";
 
 import * as React from "react";
-
 import { useTheme } from "next-themes";
-
 import { Button } from "@/components/ui/8bit/button";
 import { cn } from "@/lib/utils";
 
@@ -24,6 +22,7 @@ export function RetroModeSwitcher({ className }: RetroModeSwitcherProps) {
       className="group/toggle h-8 w-8 px-0"
       onClick={toggleTheme}
     >
+      {/* SUN ICON (Shows in Dark Mode AND Doom Mode) */}
       <svg
         width="50"
         height="50"
@@ -32,7 +31,10 @@ export function RetroModeSwitcher({ className }: RetroModeSwitcherProps) {
         xmlns="http://www.w3.org/2000/svg"
         stroke="currentColor"
         strokeWidth="0.25"
-        className={cn("size-8 hidden [html.dark_&]:block", className)}
+        className={cn(
+          "size-8 hidden [html.dark_&]:block [html.doom_&]:block [html.doom_&]:text-yellow-500",
+          className,
+        )}
         aria-label="sun-dim"
       >
         <rect x="120" y="88" width="14" height="14" rx="1"></rect>
@@ -64,6 +66,8 @@ export function RetroModeSwitcher({ className }: RetroModeSwitcherProps) {
         <rect x="152" y="120" width="14" height="14" rx="1"></rect>
         <rect x="152" y="136" width="14" height="14" rx="1"></rect>
       </svg>
+
+      {/* MOON ICON (Shows only in Light Mode) */}
       <svg
         width="50"
         height="50"

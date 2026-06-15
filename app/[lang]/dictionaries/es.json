@@ -1,5 +1,6 @@
 {
   "about_me": "Sobre mí",
+  "cheat_activated": "Truco activado",
   "experience": {
     "agrofy": {
       "description": "Como Desarrollador Full Stack, desarrollé funciones de identidad centrales, incluyendo flujos de autenticación y registro seguros en los productos de Agrofy. Implementé módulos de seguridad y gestión de usuarios utilizando .NET Core y React.js para garantizar la integridad de los datos. Además, co-arquitecté servicios escalables nativos en la nube de AWS y proporcioné mejoras técnicas continuas para mantener una alta disponibilidad del servicio.",

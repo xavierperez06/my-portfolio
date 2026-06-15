@@ -12,7 +12,10 @@ const Home = async ({ params }: { params: Promise<{ lang: string }> }) => {
   return (
     <div className="w-full">
       <div className="max-w-115 ml-4 mt-1">
-        <CheatCodeInput placeholder={dictionary.portal.cheat_code} />
+        <CheatCodeInput
+          placeholder={dictionary.portal.cheat_code}
+          message={dictionary.cheat_activated}
+        />
       </div>
 
       <div className="flex flex-1 items-center justify-center overflow-auto">
