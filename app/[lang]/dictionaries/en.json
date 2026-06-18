@@ -1,6 +1,24 @@
 {
   "about_me": "About Me",
   "cheat_activated": "Cheat activated",
+  "education": {
+    "description": "The technical training and academy grinding required to level up my full-stack capabilities.",
+    "eet5": {
+      "description": "Personal and Professional Computer Technician with Business Orientation.",
+      "institution": "E.E.T N°5, La Emilia, Buenos Aires, Argentina",
+      "level": "Technical Degree"
+    },
+    "title": "Education",
+    "timeline": {
+      "title": "Checkpoints Reached",
+      "description": "From booting up the basics to graduating as an Information Systems Engineer, tracing the route of my academic career."
+    },
+    "uai": {
+      "description": "Information Systems Engineer",
+      "institution": "Universidad Abierta Interamericana, Rosario, Argentina",
+      "level": "University Degree"
+    }
+  },
   "experience": {
     "agrofy": {
       "description": "As a Full Stack Developer, I developed core identity features, including secure authentication and registration workflows across Agrofy products. I implemented security and user management modules utilizing .NET Core and React.js to ensure data integrity. Additionally, I co-architected scalable cloud-native AWS services and provided continuous technical enhancements to maintain high service availability.",
@@ -110,7 +128,7 @@
   },
   "portal": {
     "badge": "Fast Travel",
-    "cheat_code": "Enter cheat code: ",
+    "cheat_code": "Enter cheat code",
     "description": "The gateway is open. One step and you're in the next realm.",
     "note": "No cooldown required.",
     "opening": "Opening gateway...",

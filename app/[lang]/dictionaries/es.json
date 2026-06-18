@@ -1,6 +1,24 @@
 {
   "about_me": "Sobre mí",
   "cheat_activated": "Truco activado",
+  "education": {
+    "description": "La formación técnica y el entrenamiento académico necesarios para subir de nivel mis capacidades full-stack.",
+    "eet5": {
+      "description": "Técnico en Computación Personal y Profesional con Orientación Empresarial.",
+      "institution": "E.E.T N°5, La Emilia, Buenos Aires, Argentina",
+      "level": "Título Técnico"
+    },
+    "title": "Educación",
+    "timeline": {
+      "title": "Puntos de control alcanzados",
+      "description": "Desde iniciar con lo básico hasta graduarme como Ingeniero en Sistemas de Información, trazando la ruta de mi carrera académica."
+    },
+    "uai": {
+      "description": "Ingeniero en Sistemas de Información",
+      "institution": "Universidad Abierta Interamericana, Rosario, Argentina",
+      "level": "Título Universitario"
+    }
+  },
   "experience": {
     "agrofy": {
       "description": "Como Desarrollador Full Stack, desarrollé funciones de identidad centrales, incluyendo flujos de autenticación y registro seguros en los productos de Agrofy. Implementé módulos de seguridad y gestión de usuarios utilizando .NET Core y React.js para garantizar la integridad de los datos. Además, co-arquitecté servicios escalables nativos en la nube de AWS y proporcioné mejoras técnicas continuas para mantener una alta disponibilidad del servicio.",
@@ -110,7 +128,7 @@
   },
   "portal": {
     "badge": "Viaje rápido",
-    "cheat_code": "Ingresa el código de trucos: ",
+    "cheat_code": "Ingresa el código de trucos",
     "description": "La puerta está abierta. Un paso y estás en el siguiente reino.",
     "note": "No se requiere tiempo de enfriamiento.",
     "opening": "Abriendo portal...",

@@ -9,7 +9,7 @@ interface CheatCodeInputProps {
   message?: string;
 }
 
-export function CheatCodeInput({ placeholder, message }: CheatCodeInputProps) {
+const CheatCodeInput = ({ placeholder, message }: CheatCodeInputProps) => {
   const { setTheme } = useTheme();
   const [isAnimating, setIsAnimating] = useState(false);
 
@@ -26,11 +26,11 @@ export function CheatCodeInput({ placeholder, message }: CheatCodeInputProps) {
   };
 
   return (
-    <div className="relative">
+    <div className="relative w-full max-w-full">
       {isAnimating && (
         <div className="fixed inset-0 z-50 pointer-events-none flex items-center justify-center bg-yellow-500/20 mix-blend-overlay animate-retro-flash">
           <h1
-            className="text-5xl md:text-7xl font-mono font-bold text-yellow-400 uppercase tracking-widest animate-retro-bounce"
+            className="text-3xl sm:text-5xl md:text-7xl font-mono font-bold text-yellow-400 uppercase tracking-widest animate-retro-bounce text-center px-4"
             style={{
               textShadow:
                 "4px 4px 0px #000, -2px -2px 0px #000, 2px -2px 0px #000, -2px 2px 0px #000, 2px 2px 0px #000",
@@ -41,16 +41,26 @@ export function CheatCodeInput({ placeholder, message }: CheatCodeInputProps) {
         </div>
       )}
 
-      <Input
-        placeholder={`> ${placeholder}`}
-        className={`transition-colors ${isAnimating ? "animate-retro-shake border-yellow-400 bg-yellow-900/20 text-yellow-400" : ""}`}
-        onKeyDown={(e) => {
-          if (e.key === "Enter") {
-            handleCheatCode(e.currentTarget.value);
-            e.currentTarget.value = "";
-          }
-        }}
-      />
+      <div className="relative flex items-center w-full max-w-full">
+        <span className="absolute left-3 text-muted-foreground font-mono">
+          &gt;
+        </span>
+
+        <Input
+          placeholder={placeholder}
+          className={`w-full min-w-0 pl-8 transition-colors ${
+            isAnimating
+              ? "animate-retro-shake border-yellow-400 bg-yellow-900/20 text-yellow-400"
+              : ""
+          }`}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              handleCheatCode(e.currentTarget.value);
+              e.currentTarget.value = "";
+            }
+          }}
+        />
+      </div>
 
       <style
         dangerouslySetInnerHTML={{
@@ -83,4 +93,6 @@ export function CheatCodeInput({ placeholder, message }: CheatCodeInputProps) {
       />
     </div>
   );
-}
+};
+
+export default CheatCodeInput;
