@@ -154,6 +154,22 @@
       "spanish": "Español"
     }
   },
+  "skills": {
+    "description": "Revisa las habilidades desbloqueadas del jugador, las habilidades pasivas y los buffs activos que mejoran el rendimiento en varios desafíos de codificación y colaboraciones en equipo.",
+    "title": "Árbol de habilidades",
+    "skill_tree": {
+      "description": "Desde equipar scripts básicos hasta maximizar el árbol tecnológico, mostrando las herramientas que utilizo para superar campañas de desarrollo complejas.",
+      "dot_net": {
+        "name": ".NET",
+        "description": "Desbloquea el poder de .NET para construir aplicaciones web, APIs y servicios backend robustos y escalables."
+      },
+      "react": {
+        "name": "React.js",
+        "description": "Domina React para crear interfaces de usuario dinámicas y receptivas que mejoran la experiencia del usuario."
+      },
+      "title": "Árbol Tecnológico"
+    }
+  },
   "stats": "Estadísticas",
   "theme": "Tema"
 }

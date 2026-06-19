@@ -154,6 +154,22 @@
       "dark": "Dark mode"
     }
   },
+  "skills": {
+    "description": "Review the player's unlocked skills, passive abilities, and active buffs that enhance performance in various coding challenges and team collaborations.",
+    "skill_tree": {
+      "description": "From equipping basic scripts to maxing out the tech tree, showcasing the tools I use to clear complex development campaigns.",
+      "dot_net": {
+        "name": ".NET",
+        "description": "Unlocks powerful backend capabilities, enabling the construction of robust APIs, microservices, and cloud-native applications using .NET Core and C#."
+      },
+      "react": {
+        "name": "React.js",
+        "description": "Grants mastery over modern frontend development, allowing the creation of dynamic and responsive user interfaces with React.js and TypeScript."
+      },
+      "title": "Tech Tree"
+    },
+    "title": "Skill Tree"
+  },
   "stats": "Stats",
   "theme": "Theme"
 }

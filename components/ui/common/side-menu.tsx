@@ -36,7 +36,7 @@ export default function SideMenu({ dictionary, lang }: SideMenuProps) {
       <Card className="hidden md:flex bg-background h-full">
         <CardHeader>
           <CardTitle>{dictionary.menu.title}</CardTitle>
-          <CardDescription className="my-2 text-justify">
+          <CardDescription className="my-2">
             {dictionary.menu.description}
           </CardDescription>
         </CardHeader>
