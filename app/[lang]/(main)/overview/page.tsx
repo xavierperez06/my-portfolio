@@ -97,10 +97,18 @@ const Overview = async ({ params }: { params: Promise<{ lang: string }> }) => {
       </div>
       <div className="gap-4 grid lg:grid-cols-2 grid-rows-1">
         <div>
-          <Label className="font-bold text-lg">{dictionary.about_me}</Label>
-          <p className="mt-4 lg:mt-7 text-muted-foreground text-sm text-justify retro">
-            <label>{dictionary.overview.about_me}</label>
-          </p>
+          <Label className="font-bold text-lg uppercase tracking-wider">
+            {dictionary.about_me}
+          </Label>
+          <div className="mt-4 lg:mt-7 text-muted-foreground text-sm text-justify retro leading-relaxed p-4 border-2 border-dashed border-muted/30 bg-muted/5 relative">
+            <div className="absolute top-0 left-0 w-2 h-2 border-t-2 border-l-2 border-emerald-500/50 dark:border-emerald-400/50 doom:border-[#b01e1e]/50" />
+            <div className="absolute bottom-0 right-0 w-2 h-2 border-b-2 border-r-2 border-emerald-500/50 dark:border-emerald-400/50 doom:border-[#b01e1e]/50" />
+
+            <label className="block">
+              {dictionary.overview.about_me}
+              <span className="inline-block w-2.5 h-3.5 ml-1 bg-emerald-600 dark:bg-emerald-400 doom:bg-[#b01e1e] animate-pulse align-middle" />
+            </label>
+          </div>
         </div>
 
         <div className="flex flex-col gap-2 font-mono">
@@ -123,7 +131,7 @@ const Overview = async ({ params }: { params: Promise<{ lang: string }> }) => {
 
                     <div className="flex-1 opacity-50 mb-1.5 border-muted-foreground border-b-2 border-dotted" />
 
-                    <label className="font-bold text-emerald-600 dark:text-emerald-400 text-lg">
+                    <label className="font-bold text-emerald-600 dark:text-emerald-400 text-lg doom:text-[#b01e1e]">
                       {stat.value}
                     </label>
                   </div>

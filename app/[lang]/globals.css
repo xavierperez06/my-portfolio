@@ -3,6 +3,7 @@
 @import "shadcn/tailwind.css";
 
 @custom-variant dark (&:is(.dark *));
+@custom-variant doom (&:is(.doom *));
 
 @theme inline {
   --color-background: var(--background);
@@ -119,67 +120,36 @@
 
 .doom {
   --background: #121212;
-
   --foreground: #e2e2e2;
-
   --card: #1c1a19;
-
   --card-foreground: #e2e2e2;
-
   --popover: #1c1a19;
-
   --popover-foreground: #e2e2e2;
-
   --primary: #b01e1e;
-
   --primary-foreground: #ffffff;
-
   --secondary: #245ca6;
-
   --secondary-foreground: #ffffff;
-
   --accent: #387828;
-
   --accent-foreground: #d2f0c7;
-
   --muted: #2a2725;
-
   --muted-foreground: #948f8c;
-
   --destructive: #b01e1e;
-
   --border: #423c3a;
-
   --input: #1c1a19;
-
   --ring: #387828;
-
   --radius: 0rem;
-
   --sidebar: #1a1a1a;
-
   --sidebar-foreground: #e2e2e2;
-
   --sidebar-primary: #b01e1e;
-
   --sidebar-primary-foreground: #ffffff;
-
   --sidebar-accent: #387828;
-
   --sidebar-accent-foreground: #ffffff;
-
   --sidebar-border: #423c3a;
-
   --sidebar-ring: #387828;
-
   --chart-1: #b01e1e; /* Red (Health) */
-
   --chart-2: #387828; /* Green (Armor) */
-
   --chart-3: #cf9f1d; /* Gold (Yellow Keycard / Ammo) */
-
   --chart-4: #245ca6; /* Blue (Blue Keycard / Plasma) */
-
   --chart-5: #63564c; /* Brown (Dirt/Demonic) */
 }
 
